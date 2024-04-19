@@ -173,13 +173,13 @@
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="How likely is an exploit to be detected?">Intrusion detection</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="How likely is an exploit to be detected?">Wykrywanie włamań</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="id" name="id" onchange="calculate()">
-                <option value="1">Active detection in application (1)</option>
-                <option value="3">Logged and reviewed (3)</option>
-                <option value="8">Logged without review (8)</option>
-                <option value="9">Not logged (9)</option>
+                <option value="1">Aktywne wykrywanie w aplikacji (1)</option>
+                <option value="3">Zarejestrowane i sprawdzone (3)</option>
+                <option value="8">Zalogowany bez przeglądu (8)</option>
+                <option value="9">Niezarejestrowany (9)</option>
               </select>
             </div>
           </div>
@@ -187,47 +187,47 @@
 
         <!-- BUSINESS IMPACT FACTORS -->
         <section>
-          <h5 class="border-bottom" title="The business impact stems from the technical impact, but requires a deep understanding of what is important to the company running the application. In general, you should be aiming to support your risks with business impact, particularly if your audience is executive level. The business risk is what justifies investment in fixing security problems.">Business Impact Factors</h5>
+          <h5 class="border-bottom" title="Wpływ biznesowy wynika z oddziaływania technicznego, ale wymaga głębokiego zrozumienia tego, co jest ważne dla firmy obsługującej aplikację. Ogólnie rzecz biorąc, należy dążyć do wspierania ryzyka poprzez wpływ biznesowy, szczególnie jeśli odbiorcami są przedstawiciele kadry kierowniczej. Ryzyko biznesowe uzasadnia inwestowanie w rozwiązywanie problemów związanych z bezpieczeństwem.">Czynniki wpływu na działalność biznesową</h5>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="How much financial damage will result from an exploit?">Financial damage</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak duże szkody finansowe spowoduje exploit?">Szkody finansowe</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="fd" name="fd" onchange="calculate()">
-                <option value="1">Less than the cost to fix the vulnerability (1)</option>
-                <option value="3">Minor effect on annual profit (3)</option>
-                <option value="7">Significant effect on annual profit (7)</option>
-                <option value="9">Bankruptcy (9)</option>
+                <option value="1">Mniej niż koszt usunięcia luki (1)</option>
+                <option value="3">Niewielki wpływ na zysk roczny (3)</option>
+                <option value="7">Znaczący wpływ na roczny zysk (7)</option>
+                <option value="9">Upadłość (9)</option>
               </select>
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="Would an exploit result in reputation damage that would harm the business?">Reputation damage</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Czy exploit spowodowałby uszczerbek na reputacji, który zaszkodziłby firmie?">Szkody dla reputacji</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="rd" name="rd" onchange="calculate()">
-                <option value="1">Minimal damage (1)</option>
-                <option value="4">Loss of major accounts (4)</option>
-                <option value="5">Loss of goodwill (5)</option>
-                <option value="9">Brand damage (9)</option>
+                <option value="1">Minimalne uszkodzenia (1)</option>
+                <option value="4">Utrata głównych kont (4)</option>
+                <option value="5">Strata wartości firmy (5)</option>
+                <option value="9">Uszkodzenie marki (9)</option>
               </select>
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="How much exposure does non-compliance introduce?">Non-compliance</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak duże narażenie wprowadza niezgodność?">Niezgodność</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="nc" name="nc" onchange="calculate()">
                 <option value="2">Minor violation (2)</option>
-                <option value="5">Clear violation (5)</option>
-                <option value="7">High profile violation (7)</option>
+                <option value="5">Wyraźne naruszenie (5)</option>
+                <option value="7">Naruszenie o dużym znaczeniu (7)</option>
               </select>
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="How much personally identifiable information could be disclosed?">Privacy violation</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Ile danych osobowych może zostać ujawnionych?">Naruszenie prywatności</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="pv" name="pv" onchange="calculate()">
-                <option value="3">One individual (3)</option>
-                <option value="5">Hundreds of people (5)</option>
-                <option value="7">Thousands of people (7)</option>
-                <option value="9">Millions of people (9)</option>
+                <option value="3">Jedna osoba (3)</option>
+                <option value="5">Setki ludzi (5)</option>
+                <option value="7">Tysiące ludzi (7)</option>
+                <option value="9">Miliony ludzi (9)</option>
               </select>
             </div>
           </div>
@@ -238,13 +238,13 @@
       <div class="row">
         <!-- LIKELIHOOD SCORE -->
         <section>
-          <h5 class="border-bottom">Likelihood score</h5>
+          <h5 class="border-bottom">Ocena prawdopodobieństwa</h5>
           <h6 class="LS nomargin">0</h6>
         </section>
 
         <!-- IMPACT SCORE -->
         <section>
-          <h5 class="border-bottom">Impact score</h5>
+          <h5 class="border-bottom">Ocena wpływu</h5>
           <h6 class="IS nomargin">0</h6>
         </section>
       </div>
