@@ -5,7 +5,7 @@
 
 <a align="center" href="https://javierolmedo.github.io/OWASP-Calculator/" target="_blank">GO TO ONLINE CALCULATOR</a>
 
-![](https://raw.githubusercontent.com/JavierOlmedo/OWASP-Calculator/master/img/orac.gif)
+
 
 > _Made with ❤️ in Spain_
 
