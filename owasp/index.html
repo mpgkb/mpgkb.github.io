@@ -36,7 +36,7 @@
         <section>
           <h5 class="border-bottom" title="Pierwszy zestaw czynników jest związany z zaangażowanym czynnikiem zagrażającym. Celem jest tutaj oszacowanie prawdopodobieństwa udanego ataku tej grupy zagrożeń. Użyj najgorszego agenta zagrożenia.">Czynniki zagrożenia</h5>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak wykwalifikowana technicznie jest ta grupa agentów zagrożeń?">Skill level</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak wykwalifikowana technicznie jest ta grupa agentów zagrożeń?">Poziom umiejętności</div>
             <div class="col-8">
               <select class="form-control" id="sl" name="sl" onchange="calculate()">
                 <option value="1">Brak umiejętności technicznych (1)</option>
@@ -48,7 +48,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak zmotywowana jest ta grupa agentów do znalezienia i wykorzystania tej luki?">Motive</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak zmotywowana jest ta grupa agentów do znalezienia i wykorzystania tej luki?">Motywacja</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="m" name="m" onchange="calculate()">
                 <option value="1">Niska nagroda lub jej brak (1)</option>
@@ -58,7 +58,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jakie zasoby i możliwości są potrzebne tej grupie agentów zagrożeń, aby znaleźć i wykorzystać tę lukę?">Opportunity</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jakie zasoby i możliwości są potrzebne tej grupie agentów zagrożeń, aby znaleźć i wykorzystać tę lukę?">Szansa</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="o" name="o" onchange="calculate()">
                 <option value="0">Wymagany pełny dostęp lub kosztowne zasoby (0)</option>
@@ -69,7 +69,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak duża jest ta grupa agentów zagrożeń?">Size</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak duża jest ta grupa agentów zagrożeń?">Rozmiar</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="s" name="s" onchange="calculate()">
                 <option value="2">Programiści, administratorzy systemów (2)</option>
@@ -86,7 +86,7 @@
         <section>
           <h5 class="border-bottom" title="Wpływ techniczny można podzielić na czynniki zgodne z tradycyjnymi obszarami bezpieczeństwa: poufność, integralność, dostępność i odpowiedzialność. Celem jest oszacowanie skali wpływu na system, gdyby luka została wykorzystana. ">Techniczne współczynniki wpływu</h5>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="Ile danych może zostać ujawnionych i jak bardzo są one wrażliwe?">Loss of confidentiality</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Ile danych może zostać ujawnionych i jak bardzo są one wrażliwe?">Utrata poufności</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="lc" name="lc" onchange="calculate()">
                 <option value="2">Ujawniono minimalną ilość danych niewrażliwych (2)</option>
@@ -98,7 +98,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="Ile danych może zostać uszkodzonych i jak bardzo są one uszkodzone?">Loss of integrity</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Ile danych może zostać uszkodzonych i jak bardzo są one uszkodzone?">Utrata integralności</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="li" name="li" onchange="calculate()">
                 <option value="1">Minimalne, lekko uszkodzone dane (1)</option>
@@ -110,7 +110,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak wiele usług może zostać utraconych i jak bardzo są one istotne?">Loss of availability</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak wiele usług może zostać utraconych i jak bardzo są one istotne?">Utrata dostępności</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="lav" name="lav" onchange="calculate()">
                 <option value="1">Przerwame minimalnie usługi dodatkowe (1)</option>
@@ -122,7 +122,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="Czy działania agentów ds. zagrożeń można przypisać do konkretnej osoby?">Loss of accountability</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Czy działania agentów ds. zagrożeń można przypisać do konkretnej osoby?">Utrata rozliczalności</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="lac" name="lac" onchange="calculate()">
                 <option value="1">W pełni identyfikowalny (1)</option>
@@ -138,37 +138,37 @@
       <div class="row">
         <!-- VULNERABILITY FACTORS -->
         <section>
-          <h5 class="border-bottom" title="The next set of factors are related to the vulnerability involved. The goal here is to estimate the likelihood of the particular vulnerability involved being discovered and exploited. Assume the threat agent selected above.">Vulnerability Factors</h5>
+          <h5 class="border-bottom" title="Kolejny zestaw czynników jest związany z daną podatnością. Celem jest oszacowanie prawdopodobieństwa wykrycia i wykorzystania danej podatności. Załóżmy, że wybrany powyżej czynnik zagrożenia.">Czynniki podatności na zagrożenia</h5>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="How easy is it for this group of threat agents to discover this vulnerability?">Ease of discovery</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak łatwo jest tej grupie agentów wykryć tę lukę?">Łatwość wykrywania</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="ed" name="ed" onchange="calculate()">
-                <option value="1">Practically impossible (1)</option>
-                <option value="3">Difficult (3)</option>
-                <option value="7">Easy (7)</option>
-                <option value="9">Automated tools available (9)</option>
+                <option value="1">Praktycznie niemożliwe (1)</option>
+                <option value="3">Trudne (3)</option>
+                <option value="7">Łatwe (7)</option>
+                <option value="9">Dostępne zautomatyzowane narzędzia (9)</option>
               </select>
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="How easy is it for this group of threat agents to actually exploit this vulnerability?">Ease of exploit</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak łatwo jest tej grupie agentów wykorzystać tę lukę w zabezpieczeniach?">Łatwość wykorzystania</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="ee" name="ee" onchange="calculate()">
-                <option value="1">Theoretical (1)</option>
-                <option value="3">Difficult (3)</option>
-                <option value="5">Easy (5)</option>
-                <option value="9">Automated tools available (9)</option>
+                <option value="1">Teoretyczne (1)</option>
+                <option value="3">Trudne (3)</option>
+                <option value="5">Łatwe (5)</option>
+                <option value="9">Dostępne zautomatyzowane narzędzia (9)</option>
               </select>
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="How well known is this vulnerability to this group of threat agents?">Awareness</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak dobrze znana jest ta luka w zabezpieczeniach tej grupy zagrożeń?">Świadomość</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="a" name="a" onchange="calculate()">
-                <option value="1">Unknown (1)</option>
-                <option value="4">Hidden (4)</option>
-                <option value="6">Obvious (6)</option>
-                <option value="9">Public knowledge (9)</option>
+                <option value="1">Nieznana (1)</option>
+                <option value="4">Ukryta (4)</option>
+                <option value="6">Oczywista (6)</option>
+                <option value="9">Wiedza publiczna (9)</option>
               </select>
             </div>
           </div>
