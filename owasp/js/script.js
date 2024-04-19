@@ -19,10 +19,10 @@ const backgrounds = [
   'rgba(144, 238, 144, 0.5)'
 ];
 
-const threats = ["Skills required", "Motive", "Opportunity", "Population Size",
-"Easy of Discovery", "Ease of Exploit", "Awareness", "Intrusion Detection",
-"Loss of confidentiality", "Loss of Integrity", "Loss of Availability", "Loss of Accountability",
-"Financial damage", "Reputation damage", "Non-Compliance", "Privacy violation"
+const threats = ["Poziom umiejętności", "Motywacja", "Szansa", "Rozmiar populacji",
+"Łatwość wykrywania", "Łatwość wykorzystania", "Świadomość", "Wykrywanie włamań",
+"Utrata poufności", "Utrata integralności", "Utrata dostępności", "Utrata rozliczalności",
+"Szkody finansowe", "Szkody dla reputacji", "Niezgodność", "Naruszenie prywatności"
 ];
 
 const partials = ["sl", "m", "o", "s", "ed", "ee", "a", "id", "lc", "li", "lav", "lac", "fd", "rd", "nc", "pv"];
