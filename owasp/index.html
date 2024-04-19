@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- MODIFY -->
-    <meta name="title" content="OWASP Risk Assessment Calculator" />
+    <meta name="title" content="OWASP Kalkulator oceny ryzyka" />
     <meta name="description" content="New version 2021 of OWASP Risk Assessment Calculator" />
     <meta name="author" content="Javier Olmedo" />
     <link rel="shortcut icon" href="img/favicon.ico" />
@@ -34,49 +34,49 @@
       <div class="row">
         <!-- THREAT AGENT FACTORS -->
         <section>
-          <h5 class="border-bottom" title="The first set of factors are related to the threat agent involved. The goal here is to estimate the likelihood of a successful attack by this group of threat agents. Use the worst-case threat agent.">Threat Agent Factors</h5>
+          <h5 class="border-bottom" title="Pierwszy zestaw czynników jest związany z zaangażowanym czynnikiem zagrażającym. Celem jest tutaj oszacowanie prawdopodobieństwa udanego ataku tej grupy zagrożeń. Użyj najgorszego agenta zagrożenia.">Threat Agent Factors</h5>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="How technically skilled is this group of threat agents?">Skill level</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak wykwalifikowana technicznie jest ta grupa agentów zagrożeń?">Skill level</div>
             <div class="col-8">
               <select class="form-control" id="sl" name="sl" onchange="calculate()">
-                <option value="1">No technical skills (1)</option>
-                <option value="3">Some technical skills (3)</option>
-                <option value="5">Advanced computer user (5)</option>
-                <option value="6">Network and programming skills (6)</option>
-                <option value="9">Security penetration skills (9)</option>
+                <option value="1">Brak umiejętności technicznych (1)</option>
+                <option value="3">Pewne umiejętności techniczne (3)</option>
+                <option value="5">Zaawansowany użytkownik komputera (5)</option>
+                <option value="6">Umiejętności sieciowe i programistyczne (6)</option>
+                <option value="9">Umiejętności penetracji zabezpieczeń (9)</option>
               </select>
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="How motivated is this group of threat agents to find and exploit this vulnerability?">Motive</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak zmotywowana jest ta grupa agentów do znalezienia i wykorzystania tej luki?">Motive</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="m" name="m" onchange="calculate()">
-                <option value="1">Low or no reward (1)</option>
-                <option value="4">Possible reward (4)</option>
-                <option value="9">High reward (9)</option>
+                <option value="1">Niska nagroda lub jej brak (1)</option>
+                <option value="4">Możliwa nagroda (4)</option>
+                <option value="9">Wysoka nagroda (9)</option>
               </select>
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="What resources and opportunities are required for this group of threat agents to find and exploit this vulnerability?">Opportunity</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jakie zasoby i możliwości są potrzebne tej grupie agentów zagrożeń, aby znaleźć i wykorzystać tę lukę?">Opportunity</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="o" name="o" onchange="calculate()">
-                <option value="0">Full access or expensive resources required (0)</option>
-                <option value="4">Special access or resources required (4)</option>
-                <option value="7">Some access or resources required (7)</option>
-                <option value="9">No access or resources required (9)</option>
+                <option value="0">Wymagany pełny dostęp lub kosztowne zasoby (0)</option>
+                <option value="4">Wymagany specjalny dostęp lub zasoby (4)</option>
+                <option value="7">Wymagany pewien dostęp lub zasoby (7)</option>
+                <option value="9">Nie wymaga dostępu ani zasobów (9)</option>
               </select>
             </div>
           </div>
           <div class="row">
-            <div class="h6 nomargin col-4 d-flex align-items-center" title="How large is this group of threat agents?">Size</div>
+            <div class="h6 nomargin col-4 d-flex align-items-center" title="Jak duża jest ta grupa agentów zagrożeń?">Size</div>
             <div class="col-8">
               <select class="form-control" aria-label=".form-select-sm example" id="s" name="s" onchange="calculate()">
-                <option value="2">Developers, System administrators (2)</option>
-                <option value="4">Intranet users (4)</option>
-                <option value="5">Partners (5)</option>
-                <option value="6">Authenticated users (6)</option>
-                <option value="9">Anonymous Internet users (9)</option>
+                <option value="2">Programiści, administratorzy systemów (2)</option>
+                <option value="4">Użytkownicy intranetu (4)</option>
+                <option value="5">Partnerzy (5)</option>
+                <option value="6">Uwierzytelnieni użytkownicy (6)</option>
+                <option value="9">Anonimowi użytkownicy Internetu (9)</option>
               </select>
             </div>
           </div>
